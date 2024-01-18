@@ -12,6 +12,6 @@ describe('Application root', () => {
     div.id = 'root';
     document.body.appendChild(div);
     require('../index.tsx');
-    expect(ReactDOM).toBeDefined();
+    expect(ReactDOM.render).toBeDefined();
   });
 });
