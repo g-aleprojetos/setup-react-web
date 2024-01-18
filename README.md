@@ -1,46 +1,54 @@
-<H1 align="center">Portfolio</H1>
+<H1 align="center">Portifolio</H1>
 
 <div align="center">
 
- [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
+[![Coverage Status](https://coveralls.io/repos/github/g-aleprojetos-Projects/page-portfolio/badge.svg?branch=main)](https://coveralls.io/github/g-aleprojetos-Projects/page-portfolio?branch=main)
  [![MIT Licensed](https://img.shields.io/badge/license-MIT-green.svg)](https://tldrlegal.com/license/mit-license)
- 
+
+
 </div>
 
-<H2>Setup</H2> 
+## Setup
 
-<b>Ferramentas necessárias:</b>
-  <ul>
-    <li>Visual Studio Code</li>
-    <li>Git</li>
-    <li>yarn (1.22.18)</li>
-    <li>React (18.2.0)</li>
-    <li>Typescript</li>
-    <li>Prettier (plugin do VSCode recomendado)</li>
-    <li>ESLint (plugin do VSCode recomendado)</li>
-</ul>
+- Ferramentas necessárias:
+  - Visual Studio Code
+  - Git
+  - yarn (1.22.18)
+  - React (18.2.0)
+  - Typescript
+  - Prettier (plugin do VSCode recomendado)
+  - ESLint (plugin do VSCode recomendado)
 
-<H3>Clonar projeto</H3>
+## Políticas de Código
+
+[Políticas e padrões de código](./docs/padroes-de-codigo.md)
+</br></br>
+
+## Pagina em produção
+### [https://g-aleprojetos-projects.github.io/page-portfolio](https://g-aleprojetos-projects.github.io/page-portfolio)
+
+</br></br>
+### Clonar projeto
 
 ```shell
 git clone https://github.com/g-aleprojetos-Projects/page-portfolio.git
 ```
-<H3>Instala as bibliotecas</H3>
+### Instala as bibliotecas
 
 ```shell
 yarn install
 ```
 
-<H2>Executar o projeto na máquina local</H2>
+## Executar o projeto na máquina local
 
 ```shell
-yarn run start
+yarn start
 ```
 
-<H2>Executando teste</H2>
+## Executando teste
 - Para rodar os testes, executar o comando:
 ```shell
-yarn run test
+yarn test
 ```
 
 - Para atualizar os snapshots, executar o comando:
