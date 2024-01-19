@@ -44,58 +44,58 @@ jobs:
   #                              #
   ################################
 
-  # deploy-Homologation:
-  #   runs-on: ubuntu-latest
+  deploy-Homologation:
+    runs-on: ubuntu-latest
 
-  #   environment:
-  #     name: Homologation
-  #   needs: tests
+    environment:
+      name: Homologation
+    needs: tests
 
-  #   strategy:
-  #     matrix:
-  #       node-version: [18.x]
+    strategy:
+      matrix:
+        node-version: [18.x]
 
-  #   steps:
-  #     - name: Deploy Project
-  #       uses: actions/checkout@v2
+    steps:
+      - name: Deploy Project
+        uses: actions/checkout@v2
 
-  #     - name: Use Node.js ${{ matrix.node-version }}
-  #       uses: actions/setup-node@v2
-  #       with:
-  #         node-version: ${{ matrix.node-version }}
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v2
+        with:
+          node-version: ${{ matrix.node-version }}
 
-  #     - name: Build web-app
-  #       run: |
-  #         yarn install --frozen-lockfile
-  #         yarn run build
+      - name: Build web-app
+        run: |
+          yarn install --frozen-lockfile
+          yarn run build
 
-  #     - name: Deploy to homologation-page
-  #       uses: peterjgrainger/action-create-branch@v2.2.0
-  #       env:
-  #         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-  #       with:
-  #         branch: 'homologation-Page'
+      - name: Deploy to homologation-page
+        uses: peterjgrainger/action-create-branch@v2.2.0
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          branch: 'homologation-Page'
 
-  #     - name: checking out code
-  #       uses: actions/checkout@v2
+      - name: checking out code
+        uses: actions/checkout@v2
 
-  #     - name: extract git commit data
-  #       uses: rlespinasse/git-commit-data-action@v1.x
+      - name: extract git commit data
+        uses: rlespinasse/git-commit-data-action@v1.x
 
-  #     - name: Update author information
-  #       run: echo ${{ env.GIT_COMMIT_AUTHOR_NAME }} > AUTHOR
+      - name: Update author information
+        run: echo ${{ env.GIT_COMMIT_AUTHOR_NAME }} > AUTHOR
 
-  #     - name: Raise PR 1
-  #       id: homologation-1
-  #       uses: peter-evans/create-pull-request@v3
-  #       with:
-  #         branch: 'Homologation-Page'
-  #         base: development
-  #         title: 'Homologation for auto pr1'
-  #         committer: ${{ env.GIT_COMMIT_AUTHOR_NAME }} <${{ env.GIT_COMMIT_AUTHOR_EMAIL }}">
-  #         author: ${{ env.GIT_COMMIT_AUTHOR_NAME }} <${{ env.GIT_COMMIT_AUTHOR_EMAIL }}">
-  #         body: This is to show automatic PR creation
-  #         token: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+      - name: Raise PR 1
+        id: homologation-1
+        uses: peter-evans/create-pull-request@v3
+        with:
+          branch: 'Homologation-Page'
+          base: development
+          title: 'Homologation for auto pr1'
+          committer: ${{ env.GIT_COMMIT_AUTHOR_NAME }} <${{ env.GIT_COMMIT_AUTHOR_EMAIL }}">
+          author: ${{ env.GIT_COMMIT_AUTHOR_NAME }} <${{ env.GIT_COMMIT_AUTHOR_EMAIL }}">
+          body: This is to show automatic PR creation
+          token: ${{ secrets.ACTIONS_DEPLOY_KEY }}
 
   ################################
   #                              #
@@ -106,7 +106,7 @@ jobs:
     runs-on: ubuntu-latest
     environment:
       name: Production
-    needs: tests
+    needs: deploy-Homologation
 
     strategy:
       matrix:
