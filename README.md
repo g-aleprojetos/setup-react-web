@@ -1,9 +1,10 @@
-<H1 align="center">Portifolio</H1>
+<H1 align="center">SETUP REACTJS WEB</H1>
 
 <div align="center">
 
 
 [![Coverage Status](https://coveralls.io/repos/github/g-aleprojetos/setup-react-web/badge.svg?branch=main)](https://coveralls.io/github/g-aleprojetos/setup-react-web?branch=main)
+[![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 [![MIT Licensed](https://img.shields.io/badge/license-MIT-green.svg)](https://tldrlegal.com/license/mit-license)
 
 
@@ -26,13 +27,13 @@
 </br></br>
 
 ## Pagina em produção
-### [https://g-aleprojetos-projects.github.io/page-portfolio](https://g-aleprojetos-projects.github.io/page-portfolio)
+### [https://g-aleprojetos.github.io/setup-react-web/](https://g-aleprojetos.github.io/setup-react-web/)
 
 </br></br>
 ### Clonar projeto
 
 ```shell
-git clone https://github.com/g-aleprojetos-Projects/page-portfolio.git
+git clone https://github.com/g-aleprojetos/setup-react-web.git
 ```
 ### Instala as bibliotecas
 
