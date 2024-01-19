@@ -2,8 +2,9 @@
 
 <div align="center">
 
+
 [![Coverage Status](https://coveralls.io/repos/github/g-aleprojetos/setup-react-web/badge.svg?branch=main)](https://coveralls.io/github/g-aleprojetos/setup-react-web?branch=main)
- [![MIT Licensed](https://img.shields.io/badge/license-MIT-green.svg)](https://tldrlegal.com/license/mit-license)
+[![MIT Licensed](https://img.shields.io/badge/license-MIT-green.svg)](https://tldrlegal.com/license/mit-license)
 
 
 </div>
