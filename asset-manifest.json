@@ -1,13 +1,14 @@
 {
   "files": {
-    "main.css": "/setup-react-web/static/css/main.f855e6bc.css",
-    "main.js": "/setup-react-web/static/js/main.4d7e38ee.js",
+    "main.css": "/setup-react-web/static/css/main.90f6920e.css",
+    "main.js": "/setup-react-web/static/js/main.a014eb4c.js",
+    "static/media/manutencao.svg": "/setup-react-web/static/media/manutencao.8879956a312017a106a09e808c90eb2a.svg",
     "index.html": "/setup-react-web/index.html",
-    "main.f855e6bc.css.map": "/setup-react-web/static/css/main.f855e6bc.css.map",
-    "main.4d7e38ee.js.map": "/setup-react-web/static/js/main.4d7e38ee.js.map"
+    "main.90f6920e.css.map": "/setup-react-web/static/css/main.90f6920e.css.map",
+    "main.a014eb4c.js.map": "/setup-react-web/static/js/main.a014eb4c.js.map"
   },
   "entrypoints": [
-    "static/css/main.f855e6bc.css",
-    "static/js/main.4d7e38ee.js"
+    "static/css/main.90f6920e.css",
+    "static/js/main.a014eb4c.js"
   ]
 }
