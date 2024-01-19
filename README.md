@@ -2,6 +2,13 @@
 
 <div align="center">
 
+![GitHub repo size](https://img.shields.io/github/repo-size/g-aleprojetos/setup-react-web?style=plastic)
+![GitHub forks](https://img.shields.io/github/forks/g-aleprojetos/setup-react-web?style=plastic)
+![GitHub Repo stars](https://img.shields.io/github/stars/g-aleprojetos/setup-react-web?style=plastic)
+
+</div>
+
+<div align="center">
 
 [![Coverage Status](https://coveralls.io/repos/github/g-aleprojetos/setup-react-web/badge.svg?branch=main)](https://coveralls.io/github/g-aleprojetos/setup-react-web?branch=main)
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
